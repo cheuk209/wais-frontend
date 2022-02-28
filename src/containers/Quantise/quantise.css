@@ -1,0 +1,107 @@
+.quantise {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-image: linear-gradient(to right top, #e0f8ff, #d9fcfb, #dcffef, #e9ffe0, #fffdd3);
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius:14px;
+}
+
+.quantise-feature {
+    display: flex;
+}
+
+.quantise-feature .features-container__feature {
+    margin: 0;
+}
+
+.quantise-feature .features-container__feature-text {
+    max-width: 700px;
+}
+
+.quantise-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 4rem 0 2rem;
+}
+
+.quantise-heading h2 {
+    font-size: 34px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    line-height: 45px;
+    max-width: 500px;
+
+}
+
+.quantise-heading p {
+    font-size: 20px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    line-height: 25px;
+    color: #ef9472;
+    cursor: pointer;
+}
+
+.quantise-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    margin-top: 2rem;
+}
+
+/* Customizing feature component as per needs */
+.quantise-container .features-container__feature {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+/* Customizing feature component as per needs */
+.quantise-container .features-container_feature-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .quantise-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .quantise-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .quantise-feature .quantise__features-container__feature {
+        flex-direction: column;
+    }
+
+    /* Customizing feature component as per needs */
+    .quantise-feature .quantise__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .quantise-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .quantise-container .quantise__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}
