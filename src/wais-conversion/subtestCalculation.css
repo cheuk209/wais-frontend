@@ -1,0 +1,10 @@
+.subtestForm {
+  justify-content: center;
+  align-items: center;
+}
+
+.subtestForm input {
+  max-width: 3%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
