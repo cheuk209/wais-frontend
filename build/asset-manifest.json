@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cc9125a8.css",
+    "main.js": "/static/js/main.68c5b6a8.js",
+    "static/media/woman-visiting.png": "/static/media/woman-visiting.59e48ff63c5c38cbdd0e.png",
+    "static/media/UoB.png": "/static/media/UoB.d8885d96b3d8121a3fff.png",
+    "static/media/BT.png": "/static/media/BT.779869d73a359d77a593.png",
+    "static/media/NHS.png": "/static/media/NHS.c457279b8802876a6970.png",
+    "static/media/Quantise.png": "/static/media/Quantise.d87d5f90e6e5de32f207.png",
+    "index.html": "/index.html",
+    "main.cc9125a8.css.map": "/static/css/main.cc9125a8.css.map",
+    "main.68c5b6a8.js.map": "/static/js/main.68c5b6a8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc9125a8.css",
+    "static/js/main.68c5b6a8.js"
+  ]
+}
