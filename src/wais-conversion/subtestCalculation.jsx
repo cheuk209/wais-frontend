@@ -1,38 +1,7 @@
 import { useState, useEffect } from 'react'
 import './subtestCalculation.css'
-import { Wais } from './Wais'
-import { readString } from 'react-papaparse';
 import axios from 'axios'
-
-
-const SubsetForm = ({ onSubmit, scores, scoreHandler, ageHandler, age }) => {
-
-  return (
-    <form onSubmit={onSubmit} className='subtestForm'>
-      <div>
-        <h2>Please enter the patient's age and subtest scores</h2>
-        <p>Age</p>
-        <input value={age} onChange={ageHandler} />
-      </div>
-      
-      { 
-        Object.keys(scores).map((score, index) => {
-          return (
-            <>
-              <p> { scores[score]['name'] }</p>
-              <input value={ scores[score]['value'] } onChange={scoreHandler(score)} />
-            </>
-            
-          )
-        })
-      }
-      <div>
-          <button type="submit">Submit</button>
-      </div>
-    </form>
-  )
-}
-
+import SubtestForm from './subtest/subtest'
 
 const SubtestCalculation = () => {
   const baseURL = "https://wais-deployment.herokuapp.com/";
@@ -94,7 +63,7 @@ const SubtestCalculation = () => {
   return (
     <div className='subtestCalculation section__padding'>
         
-      <SubsetForm onSubmit={sendData} scores={subtestScores} scoreHandler={handleScoreChange} age={age} ageHandler={handleAgeChange}/>
+      <SubtestForm onSubmit={sendData} scores={subtestScores} scoreHandler={handleScoreChange} age={age} ageHandler={handleAgeChange}/>
       <h1>Response Data from Backend</h1>
       <h2>Your FSIQ Score is: {JSON.stringify(post)}</h2>
       <button onClick={createPost}>Calculate your FSIQ scores</button>
