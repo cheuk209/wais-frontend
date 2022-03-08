@@ -1,4 +1,36 @@
 .card {
-  color: aqua;
-  background-color: black;
+  color: black;
+  background-color: rgb(252, 155, 231);
+  display: flex;
+}
+
+.heading {
+  padding: 20px;
+}
+
+.card h2 {
+  align-items: center;
+}
+
+.subtestForm {
+  width: 1000px;
+  background-color: white;
+  padding: 40px 40px;
+  margin: 40px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.subtestForm input {
+  max-width: 50%;
+  background-color: white;
+}
+
+
+.form-image {
+  object-fit: fill;
+}
+
+.form-image img {
+  max-width: 100%;
 }
