@@ -6,8 +6,8 @@ function Header() {
   return (
     <div className='header section__padding' id='Home'>
       <div className='header-content'>
-        <h1 className='gradient__text'>Psychology,<br />powered by tech.</h1>
-        <p>Learn how AI and technology can transform the way you work.  </p>
+        <h1 className='gradient__text'>Psychology, powered by tech.</h1>
+        <p>Learn how AI and technology can transform <br/> the way you work.  </p>
       </div>
       <div className='header-image'>
         <img src={woman} alt='woman visit' />

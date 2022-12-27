@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react'
 import './subtestCalculation.css'
-import { Wais } from './Wais'
-import { readString } from 'react-papaparse';
 import axios from 'axios'
 
 
@@ -102,4 +100,4 @@ const SubtestCalculation = () => {
   )
 }
 
-export default SubtestCalculation
+export default SubtestCalculation;
